@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+body {
+  transition: 0.4s;
+  background: #ADA996;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  background: #212121;
+  color: white;
+  width: 100%;
+  height: 50px;
+
+  align-items: center;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.nav-align {
+  float: left;
+  padding: 0 150px;
+}
+
+/* label {
+  padding: 5px 10px;
+} */
+
+.nav-align input[type="checkbox"] {
+  display: none;
+}
+
+.nav-align label {
+  color: #0774d9;
+  cursor: pointer;
+  padding: 7px 15px 7px 51px;
+  display: inline-block;
+  position: relative;
+  border-radius: 3px;
+  transition: all .5s ease;
+}
+
+.nav-align label:hover {
+  background: rgba(0, 116, 217, 0.1);
+}
+
+.nav-align label::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background: none;
+  border: 3px solid #0774d9;
+  border-radius: 25%;
+  position: absolute;
+  left: 17px;
+  top: 1px;
+}
+
+.dark {
+  background: #212121;
+  color: white;
+}
+
+.dark-light {
+  background: rgb(36, 66, 112);
+  color: #d7d7d7;
+}
+
+.light {
+  background: #ffffff;
+  color: #212121;
+}
+
+button {
+  margin: 25px;
+  border: 0px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.container {
+  padding: 30px 150px;
+}
+
+.nav-align input[type="checkbox"]:checked+label {
+  padding: 7px 15px;
+  background: #0774d9;
+  color: white;
+  border-radius: 3px;
+}
+
+.nav-align input[type="checkbox"]:checked+label::before {
+  display: none;
+}
+
+.dark-light.dark.light {
+  background: #0774d9;
+  color: white;
+}
+
+.dark.dark-light {
+  background: #7e3232;
+  color: #d7d7d7;
+}
+
+.dark.light {
+  background: #79f5f5;
+  color: #212121;
+}
+
+.dark-light.light {
+  background: #f0fc88;
+  color: #212121;
+}
